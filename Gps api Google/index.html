@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa con Servicios</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <div id="map"></div>
+
+    <!-- Contenedor para los botones -->
+    <div class="botones-container">
+        <!-- Btn compartir -->
+        <button class="boton-compartir" onclick="compartir()">&#x1F517;</button>
+
+        <!-- Botón servicio -->
+        <button class="boton-servicios" onclick="toggleMenu()">Servicios</button>
+    </div>
+
+    <!-- Menú desplegable servicio -->
+    <div class="menu-servicios" id="menuServicios">
+        <label><input type="checkbox" name="servicio" value="Restaurantes"> Restaurantes</label>
+        <label><input type="checkbox" name="servicio" value="Hoteles"> Hoteles</label>
+        <label><input type="checkbox" name="servicio" value="Estacion De Servicio"> Estacion De Servicio</label>
+        <label><input type="checkbox" name="servicio" value="Cafeteria"> Cafeteria</label>
+        <label><input type="checkbox" name="servicio" value="Heladeria"> Heladeria</label>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+</body>
+</html>
